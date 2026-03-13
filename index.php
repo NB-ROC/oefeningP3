@@ -41,7 +41,7 @@ foreach ($result as $persoon) {
 ?>
       <form action="Week3/update.php" method="post">
         <input type="text" hidden name="personeelnummer" value="<?php echo $persoon['personeelnummer']; ?>" />
-        <input type="text" name="voornaam" placeholder="voornaam" value="<?php echo $persoon['voornaam']; ?>" />
+        <input type="text" name="voornaam" placeholder="voornaam" value="<?php echo $p  ersoon['voornaam']; ?>" />
         <input type="text" name="achternaam" placeholder="achternaam" />
         <input type="text" name="pasfoto" placeholder="pasfoto" />
 

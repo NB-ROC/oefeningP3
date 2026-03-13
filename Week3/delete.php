@@ -1,16 +1,16 @@
 <?php
 
-$voornaam = $_POST["voornaam"];
+$personeelnummer = $_POST["personeelnummer"];
 
 
 //variabel met een SQL query
-$sql = "INSERT INTO `personeel`( `voornaam`, `achternaam`, `pasfoto`) VALUES (':voornaam','','')";
+$sql = ""; //vul hier de delete query
 
 //preparestatement
 $stmt = $conn->prepare($sql);
 
 //binden van variabel
-$stmt->bindParam(":voornaam", $voornaam );
+$stmt->bindParam(":personeelnummer", $personeelnummer );
 
 //execute on db
 $stmt->execute();
